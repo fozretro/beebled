@@ -7,6 +7,8 @@ So after nearly a year at this point (24th Nov 2022) of learning electronics, "r
 ![](/img/BeebLED.png)
 ![](/img/BeebLEDHardware.png)
 
+You can also see a demo video [here](https://drive.google.com/file/d/1L_YhwlXpUD0SaMJsGKrx3CFpbm8zI_nu/view).
+
 Credits
 =======
 - [Ben Eater](https://eater.net/6502), for opening my eyes to the joy of hardware and software building together!
