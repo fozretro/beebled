@@ -16,7 +16,7 @@ Credits
 Usage
 =====
 
-It is a little early in development to complete this section, though my eventual goal is some kind of ROM, possibly using sideways RAM to avoid using the main RAM. Maybe even a VDU driver to plot stuff on the LED display? For now please see this StarDot thread.
+It is a little early in development to complete this section, though my eventual goal is some kind of ROM, possibly using sideways RAM to avoid using the main RAM. Maybe even a VDU driver to plot stuff on the LED display? For now please see [this StarDot Forum thread](https://stardot.org.uk/forums/viewtopic.php?f=3&t=26047).
 
 Developmet Tools
 ================
