@@ -40,7 +40,7 @@ This enables the fastest possible inner loop for development, build on the Mac a
 
 ```perl ./bin/UPURSFS/TubeHost/TubeHost.perl -U /dev/cu.usbserial-FTCL544Z```
 
-By default the files it serves up to the BBC are in $HOME/Beeb_Disks.
+By default the files it serves up to the BBC are in ```$HOME/Beeb_Disks```, however the above script has been modified to serve from ```/dev```. Note that when working on the files on the Beeb changes are also instantly reflected as well. For example when editing the sprites using the native Acorn GFX sprite editor and commands as described below.
 
 Updating Sprites
 ----------------
