@@ -4,10 +4,10 @@ BeebLED
 
 So after nearly a year at this point (24th Nov 2022) of learning electronics, "re"collecting various retro computers, modifying and fixing them. I figured I would revist a childhood dream to have my own scrolling message board! Just like the ones down my local kebab shop! So lets build an LED matrix scroller for the Beeb! The proof of concept can be found [here](https://www.reddit.com/r/beneater/comments/xq2d4h/completed_6502_project_with_led_scroller/).
 
+You can also see a demo video [here](https://drive.google.com/file/d/1L_YhwlXpUD0SaMJsGKrx3CFpbm8zI_nu/view).
+
 ![](/img/BeebLED.png)
 ![](/img/BeebLEDHardware.png)
-
-You can also see a demo video [here](https://drive.google.com/file/d/1L_YhwlXpUD0SaMJsGKrx3CFpbm8zI_nu/view).
 
 Credits
 =======
@@ -40,7 +40,7 @@ This enables the fastest possible inner loop for development, build on the Mac a
 
 ```perl ./bin/UPURSFS/TubeHost/TubeHost.perl -U /dev/cu.usbserial-FTCL544Z```
 
-By default the files it serves up to the BBC are in $HOME/Beeb_Disks.
+By default the files it serves up to the BBC are in ```$HOME/Beeb_Disks```, however the above script has been modified to serve from ```/dev```. Note that when working on the files on the Beeb changes are also instantly reflected as well. For example when editing the sprites using the native Acorn GFX sprite editor and commands as described below.
 
 Updating Sprites
 ----------------
