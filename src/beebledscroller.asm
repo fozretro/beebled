@@ -28,14 +28,12 @@
   EQUB %00010100 ; cyan    6
   EQUB %00010101 ; white   7
 
-.chardef
-  INCBIN "./resources/fonts/BBC" ; 8x8 pixel font, 8 bytes per char (1bpp), starting at ASCII 32 (space)
-
-.charmap
-  FOR n, 0, 128
-    EQUB (chardef + (n * 8)) MOD 256 
-    EQUB (chardef + (n * 8)) DIV 256 
-  NEXT
+.scroll_char_def_block
+.scroll_char_value
+    EQUB 0
+.scroll_char_def 
+    EQUD &00000000
+    EQUD &00000000
 
 .scroll_message
     lda scroll_message_subidx
@@ -55,24 +53,11 @@
     stx scroll_message_idx ; and store
     cmp #'#' ; special command?
     beq scroll_message_command
-    sec
-    sbc #' ' ; use ascii code for space char as zero base index into chardef
-    asl a ; multiple by 2 to get index into charmap
-    tax
-    lda charmap,x ; address to the chardef address for this character
-    sta scroll_char_addr ; low order byte of this characters memory location
-    inx 
-    lda charmap,x
-    sta scroll_char_addr+1 ; high order byte of this characters memory location
-    ldx #0
-    ldy #0
-.scroll_message_process_char_byte ; grab all 8 bytes representing the character into scroll_char_def
-    lda (scroll_char_addr),y
-    sta scroll_char_def,x
-    inx
-    iny
-    cpx #8
-    bne scroll_message_process_char_byte    
+    sta scroll_char_value ; input into following OSWORD call to read char def
+    lda #&A ; OSWORD Read character definition
+    ldx #<scroll_char_def_block
+    ldy #>scroll_char_def_block
+    jsr OSWORD
     lda #<scroll_message_scroll_char_pixels ; set pixel scroller callback handler to scroll the character pixels
     sta scroll_message_pixels_handler_addr
     lda #>scroll_message_scroll_char_pixels

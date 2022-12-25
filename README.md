@@ -75,7 +75,6 @@ TODO's
 Software
 --------
 - Add support #s command to support sprites of different heights (hard coded to 8)
-- Remove hard coded font and use OS API to get character definitions
 - Build config. for the MODE2 emulation of LED output (consider using MODE 8)
 - Remove hard coded mode2 calculated rows table and replace with asm macro script?
 - Add config to support different size led panels, constants and logic behavior hard codedto 11x44
@@ -94,6 +93,10 @@ Hardware
 
 Development Diary
 =================
+
+Dec 25th
+--------
+- Removed hard coded font and used OS API to get character definitions
 
 Dec 24th
 --------

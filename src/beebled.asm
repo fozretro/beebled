@@ -1,4 +1,5 @@
 ; OS Routines
+OSWORD=&FFF1
 OSWRCH=&FFEE
 OSRDCH=&FFE0
 OSBYTE=&FFF4
@@ -52,9 +53,9 @@ display_address_map_addr = $007D ; 2 bytes
 scroll_message_text_left_pixel = $007F ; 1 byte
 scroll_message_idx = $0080 ; 1 byte
 scroll_message_subidx = $0081 ; 1 byte - points to column from char def or sprite being scorlled
-scroll_char_addr = $0082  ; 2 bytes point to char def structure
+; unused = $0082  ; 2 bytes point to char def structure
 scroll_sprite_addr= $0082 ; 2 bytes point to spride def structure, see SPRITE_HEADER_
-scroll_char_def = $0084  ; 8 bytes
+; unused = $0084  ; 8 bytes
 scroll_sprite_width = $0084 ; 1 byte
 scroll_sprite_height = $0085 ; 1 byte
 scroll_message_text_right_pixel = $008C; 1 byte
