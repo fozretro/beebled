@@ -2,3 +2,4 @@
 /dev/beebleddist
 .DS_Store
 pcb/BeebLED-backups/*
+pcb/fp-info-cache
