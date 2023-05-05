@@ -85,14 +85,17 @@ Software
 Hardware
 ---------
 - Experiment with adding additional 11x44 pixel matrix for longer and/or wider displays
-- Reproduce the circuit in Kicad
-- Design the PCB in Kicad
-- Build PCB via PCBWay
-- Populate the PCB and test it!
-- Share the designs
+- Build and Populate the PCB and test it!
 
 Development Diary
 =================
+
+5th May 2023
+------------
+- Reproduce the circuit in Kicad
+- Design the PCB in Kicad
+- Build PCB via PCBWay
+- Share the designs
 
 Dec 25th
 --------
