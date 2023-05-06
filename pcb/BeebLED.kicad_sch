@@ -1158,7 +1158,6 @@
   (no_connect (at 76.2 106.68) (uuid 3fdafd2f-4d31-4af2-bf6f-c7e0899e514a))
   (no_connect (at 76.2 93.98) (uuid 3fdafd2f-4d31-4af2-bf6f-c7e0899e514b))
   (no_connect (at 76.2 96.52) (uuid 3fdafd2f-4d31-4af2-bf6f-c7e0899e514c))
-  (no_connect (at 102.87 133.35) (uuid 4d27230b-35dc-43bf-972e-75628ccb957c))
   (no_connect (at 166.37 78.74) (uuid 915305ba-4014-4c95-a989-11cc3696ad99))
   (no_connect (at 118.11 133.35) (uuid b278ba7a-5ccf-4c6a-bd65-279dbf561f0a))
 
@@ -1398,6 +1397,22 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3d166f03-359f-4895-8954-24b58a1c6429))
+  )
+
+  (symbol (lib_id "power:GND") (at 102.87 133.35 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 22e8adfd-f463-4836-99f0-c98388c7ac27)
+    (property "Reference" "#PWR?" (id 0) (at 102.87 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "" (id 1) (at 102.87 138.43 0))
+    (property "Footprint" "" (id 2) (at 102.87 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 102.87 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid de796b3b-bad1-4e19-83d4-f023b226c238))
   )
 
   (symbol (lib_id "power:GND") (at 205.74 102.87 0) (unit 1)
@@ -1867,15 +1882,15 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x03_Male") (at 190.5 76.2 180) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid cbc4f504-99b1-404f-8b3a-f0881c4b1ae5)
     (property "Reference" "J3" (id 0) (at 191.77 74.9299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "WS51282B" (id 1) (at 191.77 77.4699 0)
+    (property "Value" "" (id 1) (at 191.77 77.4699 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" (id 2) (at 190.5 76.2 0)
+    (property "Footprint" "" (id 2) (at 190.5 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 190.5 76.2 0)
@@ -2105,6 +2120,9 @@
     (path "/e5ee44b4-4294-4e8d-97ef-8e28a6562a6e"
       (reference "#PWR0114") (unit 1) (value "+5V") (footprint "")
     )
+    (path "/22e8adfd-f463-4836-99f0-c98388c7ac27"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/65ed6649-7f77-42ba-8364-96e8d5d3ec59"
       (reference "C1") (unit 1) (value "47p") (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm")
     )
@@ -2124,7 +2142,7 @@
       (reference "J2") (unit 1) (value "Jack-DC") (footprint "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal_CircularHoles")
     )
     (path "/cbc4f504-99b1-404f-8b3a-f0881c4b1ae5"
-      (reference "J3") (unit 1) (value "WS51282B") (footprint "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal")
+      (reference "J3") (unit 1) (value "WS51282B") (footprint "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal")
     )
     (path "/f0c486ea-8fdb-49cc-877f-2ed6f80e037d"
       (reference "R1") (unit 1) (value "6.8k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")

@@ -3,3 +3,5 @@
 .DS_Store
 pcb/BeebLED-backups/*
 pcb/fp-info-cache
+pcb/\#auto_saved_files\#
+pcb/_autosave-BeebLED.kicad_sch
