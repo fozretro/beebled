@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.5,
-          "height": 3.5,
-          "width": 3.5
+          "drill": 0.8,
+          "height": 1.6,
+          "width": 1.6
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -49,7 +49,9 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|117379726|65059705|46a4ea48-c711-4ba8-bcde-157460e3d207|1db21d1b-8596-4580-b630-9b06ccee0d10"
+      ],
       "meta": {
         "version": 2
       },
