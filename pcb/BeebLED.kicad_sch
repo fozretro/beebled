@@ -1402,7 +1402,7 @@
   (symbol (lib_id "power:GND") (at 102.87 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 22e8adfd-f463-4836-99f0-c98388c7ac27)
-    (property "Reference" "#PWR?" (id 0) (at 102.87 139.7 0)
+    (property "Reference" "#PWR0115" (id 0) (at 102.87 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "" (id 1) (at 102.87 138.43 0))
@@ -1459,10 +1459,10 @@
   )
 
   (symbol (lib_id "Connector_Generic_MountingPin:Conn_02x10_Counter_Clockwise_MountingPin") (at 83.82 96.52 180) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid 352f2bc0-2898-4caa-a7c1-8fdd76c416aa)
-    (property "Reference" "J1" (id 0) (at 85.09 82.55 0))
-    (property "Value" "BBC User Port" (id 1) (at 85.09 80.01 0))
+    (property "Reference" "J1" (id 0) (at 82.55 80.01 0))
+    (property "Value" "BBC User Port" (id 1) (at 82.55 77.47 0))
     (property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Horizontal" (id 2) (at 83.82 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2121,7 +2121,7 @@
       (reference "#PWR0114") (unit 1) (value "+5V") (footprint "")
     )
     (path "/22e8adfd-f463-4836-99f0-c98388c7ac27"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0115") (unit 1) (value "GND") (footprint "")
     )
     (path "/65ed6649-7f77-42ba-8364-96e8d5d3ec59"
       (reference "C1") (unit 1) (value "47p") (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm")
