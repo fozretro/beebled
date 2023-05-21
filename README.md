@@ -7,7 +7,7 @@ So after nearly a year at this point (24th Nov 2022) of learning electronics, "r
 You can also see a demo video [here](https://drive.google.com/file/d/1L_YhwlXpUD0SaMJsGKrx3CFpbm8zI_nu/view).
 
 ![](/img/BeebLED.png)
-![](/img/BeebLEDHardware.png)
+![](/img/BeebLEDv1-1.jpg)
 
 Credits
 =======
@@ -89,6 +89,19 @@ Hardware
 
 Development Diary
 =================
+
+20th May 2023
+-------------
+- Week prior to today, the PCB arrived from PCBWay, along with various components
+- Assemebling on and off during weekday evenings
+- First test failed!
+- Made a quick hack to the code to simply flip 1 LED off and on with a keypress, should add this in the future as a flag
+- After compariing with the prototype and studying the PCB layout, realized i flipped the diode footprint on the PCB layout!
+- Also found that the matrix JST connector I used is to small
+- Have the breadboard prototype to compare signals really helped!
+- After a soldering the matrix fly lead diretly to the PCB for now, and flipping the diode, success!
+- Next job fix the PCB design, and source larger JST connector, also publish a BOM
+- Then build the next version!
 
 5th May 2023
 ------------
