@@ -85,10 +85,21 @@ Software
 Hardware
 ---------
 - Experiment with adding additional 11x44 pixel matrix for longer and/or wider displays
-- Build and Populate the PCB and test it!
 
 Development Diary
 =================
+
+26th May 2023
+-------------
+- Made some fixes to the schematic and PCB design
+- 1/ flipped diode around
+- 2/ removed pcb JST connector (could not find one for JST SM based connectors) and replaced with pin headers and annotated 
+- 3/ increased footprint size of 1000uF capacitor 
+- 4/ added a little more labelling on the pcb
+- 5/ updated to v1.2
+- I kinda like it without a case and don't have the skills or hardware to design one (nor time, space, $ to invest at this point in that hobby)
+- So I am thinking once the hardware design is stable I will turn full attention to the software TODO's above
+- Next step is to double check above changes and send off for a new PCB, build it and test it
 
 20th May 2023
 -------------
